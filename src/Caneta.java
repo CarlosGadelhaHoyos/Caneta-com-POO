@@ -11,20 +11,20 @@ public class Caneta {
     //Metodos 
     public Caneta(){
 
-        System.out.println("Caneta criada com sucesso!");
-        System.out.println("Antes de proceguir. Atribua as características da sua caneta:\n ");
+        System.out.println("\nCaneta criada com sucesso!\n");
+        System.out.println("Antes de proceguir. Atribua as caracteristicas da sua caneta:\n ");
         
-        System.out.println("\tCor: ");
+        System.out.print("\tCor: ");
         this.setCor();
 
-        System.out.println("Modelo: ");
+        System.out.print("\tModelo: ");
         this.setModelo();
 
-        System.out.println("Carga: " + this.carga + "(A carga por padrão vem inteira)");
+        System.out.println("\tCarga: " + this.carga + "(A carga por padrão vem inteira)");
         this.setCarga(100);
 
-        System.out.println("(A caneta por padrão vem tampada)");
-        tampada = true;
+        System.out.println("\tTampada? : (A caneta por padrão vem tampada)");
+        this.setTampada(true);;
 
         this.status();
     }
@@ -34,14 +34,14 @@ public class Caneta {
 
         String respostaDestampar;
 
-        if(this.tampada = false){
+        if(this.tampada == false){
 
             System.out.println("Escrevendo...");
             this.setCarga(this.getCarga() - 5);
 
-        }else if(this.tampada = true){
+        }else if(this.tampada == true){
 
-            System.out.println("ERRO! A caneta nao pode escrever se estiver tampada.");
+            System.out.println("\nERRO! A caneta nao pode escrever se estiver tampada.");
             System.out.println("Destampar? [s]/[n]");
             respostaDestampar = scan.nextLine();
 
@@ -51,6 +51,7 @@ public class Caneta {
             if(respostaDestampar.equals("s")){
 
                 this.destampar();
+                this.escrever();
 
             }else if(respostaDestampar.equals("n")){
 
@@ -64,19 +65,19 @@ public class Caneta {
 
     public void tampar() {
 
-        this.tampada = true;
+        this.setTampada(true);;
         System.out.println("Caneta tampada.");
     }
 
     public void destampar(){
 
-        this.tampada = false;
+        this.setTampada(false);
         System.out.println("Caneta destampada.");
     }
 
     public void status(){
 
-        System.out.println("Caneta STATUS");
+        System.out.println("\nCaneta STATUS\n");
         System.out.println("\tCor: " + this.getCor());
         System.out.println("\tCarga: " + this.getCarga());
         System.out.println("\tModelo: " + this.getModelo());
@@ -115,9 +116,16 @@ public class Caneta {
         return this.carga;
     }
 
-    //A variável tampada não terá metodo setter, por ter os metodos "tampar" e "destampar"
+    //A variável tampada não terá metodo setter, por ter os metodos "tampar" e "destampar" 
+    //Sim é necessário! O codigo ficou confuso sem os acessores da variável tampada
+
     public boolean getTampada(){
 
         return this.tampada;
+    }
+
+    public void setTampada(boolean t){
+
+        this.tampada = t;
     }
 }
