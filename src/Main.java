@@ -1,11 +1,20 @@
+import java.util.Scanner;
 
 public class Main {
     
     public static void main(String[] args) {
         
         Caneta c1 = new Caneta();
+        Scanner scan = new Scanner(System.in);
+        String querContinuar;
 
-        c1. escrever();
-        c1.status();
+        do{
+
+            System.out.println("Testando loop");
+            querContinuar = scan.nextLine();
+            querContinuar.toLowerCase();
+            querContinuar.strip();
+
+        }while(querContinuar.equals("s"));
     }
 }

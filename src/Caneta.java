@@ -29,7 +29,6 @@ public class Caneta {
         this.status();
     }
 
-
     public void escrever(){
 
         String respostaDestampar;
