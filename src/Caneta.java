@@ -11,24 +11,25 @@ public class Caneta {
     //Metodos 
     public Caneta(){
 
-        System.out.println("\nCaneta criada com sucesso!\n");
-        System.out.println("Antes de proceguir. Atribua as caracteristicas da sua caneta:\n ");
+        System.out.println("\nAntes de proceguir. Atribua as caracteristicas da sua caneta:\n ");
         
         System.out.print("\tCor: ");
         this.setCor();
-
+        
         System.out.print("\tModelo: ");
         this.setModelo();
-
+        
         this.setCarga(100);
         System.out.println("\tCarga: " + this.carga + " (A carga por padrão vem inteira)");
-
+        
         this.setTampada(true);;
         System.out.println("\tTampada? : (A caneta por padrão vem tampada)");
-
+        
         this.status();
+        
+        System.out.println("\nCaneta criada com sucesso!\n");
     }
-
+    
     public void escrever(){
 
         String respostaDestampar;
