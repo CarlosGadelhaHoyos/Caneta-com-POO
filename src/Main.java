@@ -11,6 +11,9 @@ public class Main {
         do{
 
             
+            querContinuar = scan.nextLine();
+            querContinuar.toLowerCase();
+            querContinuar.strip();
 
         }while(querContinuar.equals("s"));
     }

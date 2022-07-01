@@ -20,11 +20,11 @@ public class Caneta {
         System.out.print("\tModelo: ");
         this.setModelo();
 
-        System.out.println("\tCarga: " + this.carga + "(A carga por padrão vem inteira)");
         this.setCarga(100);
+        System.out.println("\tCarga: " + this.carga + " (A carga por padrão vem inteira)");
 
-        System.out.println("\tTampada? : (A caneta por padrão vem tampada)");
         this.setTampada(true);;
+        System.out.println("\tTampada? : (A caneta por padrão vem tampada)");
 
         this.status();
     }
