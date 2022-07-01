@@ -10,10 +10,7 @@ public class Main {
 
         do{
 
-            System.out.println("Testando loop");
-            querContinuar = scan.nextLine();
-            querContinuar.toLowerCase();
-            querContinuar.strip();
+            
 
         }while(querContinuar.equals("s"));
     }

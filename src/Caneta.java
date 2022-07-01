@@ -62,6 +62,39 @@ public class Caneta {
         }
     }
 
+    public void rabiscar(){
+
+        String respostaDestampar;
+
+        if(this.tampada == false){
+
+            System.out.println("\nRabiscando...\n");
+            this.setCarga(this.getCarga() - 15);
+
+        }else if(this.tampada == true){
+
+            System.out.println("\nERRO! A caneta nao pode rabiscar se estiver tampada.");
+            System.out.println("Destampar? [s]/[n]");
+            respostaDestampar = scan.nextLine();
+
+            respostaDestampar.toLowerCase();
+            respostaDestampar.strip();
+
+            if(respostaDestampar.equals("s")){
+
+                this.destampar();
+                this.rabiscar();;
+
+            }else if(respostaDestampar.equals("n")){
+
+                System.out.println("Ah, ok.");
+            }else{
+
+                System.out.println("Tente novamente. Resposta inválida.");
+            }
+        }
+    }
+
     public void tampar() {
 
         this.setTampada(true);;
