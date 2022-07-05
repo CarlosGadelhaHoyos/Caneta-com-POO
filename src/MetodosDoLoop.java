@@ -7,7 +7,8 @@ public class MetodosDoLoop extends Caneta{
         Scanner scan = new Scanner(System.in);
         String oQueDesejaFazer;
 
-        System.out.println("\nO que deseja fazer?\n\nEscrever \t[e]\nRabiscar \t[r]\nDestampar \t[d]\nTampar \t[t]");
+        System.out.println("\nO que deseja fazer?\n\nEscrever \t[e]\nRabiscar \t[r]\nDestampar \t[d]\nTampar \t\t[t]");
+        System.out.print("\nResposta: ");
         oQueDesejaFazer = scan.nextLine();
         oQueDesejaFazer.strip();
         oQueDesejaFazer.toLowerCase();
