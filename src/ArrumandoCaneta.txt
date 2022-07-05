@@ -1,0 +1,6 @@
+Preciso criar um algorítimo que se repita até o usuário querer.
+
+Metodos classe Main:
+    -cabeçalho perguntando o que quer fazer;
+    -receber input e fazer o que tem que fazer;
+    -resposta se quer continuar;

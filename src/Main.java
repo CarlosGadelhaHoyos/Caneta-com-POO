@@ -9,6 +9,7 @@ public class Main {
         String querContinuar;
         String oQueDesejaFazer;
 
+        
         do{
 
             System.out.println("\nO que deseja fazer?\n\nEscrever \t[e]\nRabiscar \t[r]\nDestampar \t[d]\nTampar \t[t]");
