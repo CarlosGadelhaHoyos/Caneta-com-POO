@@ -36,12 +36,12 @@ public class Caneta {
 
         if(this.tampada == false){
 
-            System.out.println("\nEscrevendo...");
+            System.out.println("Escrevendo...\n");
             this.setCarga(this.getCarga() - 5);
 
         }else if(this.tampada == true){
 
-            System.out.println("\nERRO! A caneta nao pode escrever se estiver tampada.");
+            System.out.println("\nERRO! A caneta nao pode escrever se estiver tampada.\n");
             System.out.print("Destampar? [s]/[n]: ");
             respostaDestampar = scan.nextLine();
 
@@ -99,13 +99,13 @@ public class Caneta {
     public void tampar() {
 
         this.setTampada(true);;
-        System.out.println("Caneta tampada.");
+        System.out.println("\nCaneta tampada.\n");
     }
 
     public void destampar(){
 
         this.setTampada(false);
-        System.out.println("Caneta destampada.");
+        System.out.println("\nCaneta destampada.\n");
     }
 
     public void status(){
