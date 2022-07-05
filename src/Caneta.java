@@ -36,13 +36,13 @@ public class Caneta {
 
         if(this.tampada == false){
 
-            System.out.println("Escrevendo...");
+            System.out.println("\nEscrevendo...");
             this.setCarga(this.getCarga() - 5);
 
         }else if(this.tampada == true){
 
             System.out.println("\nERRO! A caneta nao pode escrever se estiver tampada.");
-            System.out.println("Destampar? [s]/[n]");
+            System.out.print("Destampar? [s]/[n]: ");
             respostaDestampar = scan.nextLine();
 
             respostaDestampar.toLowerCase();
